@@ -1,0 +1,13 @@
+# Pareto front points: solution index, citizen satisfaction, alignment
+1,4996.0,1.67836
+# Nash solution index
+1
+# Kalai-Smordinsky solution index
+1
+# Szymkiewicz–Simpson coefficients
+# Nash vs citizen satisfaction
+1.0
+# Kalai-Smordinsky vs citizen satisfaction
+1.0
+# solution index , list of selected proposals
+1,2,3,4,8,9,10,11,16

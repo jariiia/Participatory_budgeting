@@ -1,0 +1,88 @@
+README
+======
+
+Installation instructions
+-------------------------
+
+1. Unzip the AAMAS2024.zip file in a directory of your choice
+2. Install the Julia programming language for your operating system following the instructions at https://julialang.org/downloads/platform/
+3. Run Julia
+4. From Julia, install the JUMP package following the instructions at https://julialang.org/downloads/platform/
+4. From Julia, install the HiGHS package by typing the following commands
+
+import Pkg
+Pkg.add("HiGHS")
+
+5. From Julia, install the MultiObjectiveAlgorithms package by typing the following commands
+
+import Pkg
+Pkg.add("MultiObjectiveAlgorithms")
+
+6. From Julia, install the Plots package by typing the following commands
+
+import Pkg
+Pkg.add("Plots")
+
+
+Organisation of the distribution
+--------------------------------
+After unzipping the AAMAS2024.zip file, you will obtain the following contents within AAMAS2024:
+
+- The "PB_analyser.jl" file: it is a Julia file that reads a file with participatory budgeting data, computes the Pareto Front, and the Nash and Kalai-Smordinsky solutions.
+- The "data" directory contains all the datasets employed in the paper for both Barcelona and Poland. Each data file contains the pre-computed values for citizen satisfaction and value alignment for each proposal.
+- The "results" directory contains the output produced when running PB_analyser.jl for each dataset in the data directory
+- The "plots" directory contains the Pareto front plots for each one of the datasets in the data directory
+
+
+How to run and plot an example
+------------------------------
+First, make sure that you can run Julia in your computer.
+If so, cd into the AAMAS2024 directory that results from unzipping the AAMAS2024.zip file:
+
+yourpath> cd AAMAS2024
+
+From there, simply run julia as follows:
+
+yourpath> julia PB_analyser.jl dataset_name
+
+where dataset_name must be one of the following ones:
+
+Bemowo
+Bialoleka
+Bielany
+CiutatVella
+Eixample
+Gracia
+HortaGuinardo
+LesCorts
+Mokotow
+NouBarris
+Ochota
+Praga-Polnoc
+Praga-Poludnie
+Rembertow
+SantAndreu
+SarriaSantGervasi
+SantMarti
+SantsMontjuic
+Srodmiescie
+Targowek
+Ursus
+Ursynow
+Warszawa
+Wawer
+Wilanow
+Wlochy
+Wesola
+Wola
+Zoliborz
+
+If everything goes well, PB_analyser.jl will create a log file in the results directory containing:
+- the points in the Pareto Front
+- the Nash product solution
+- the Kalai-Smordinsky solution
+- the proposals that are part of each solution in the Pareto front
+
+For instance, the results file for the Bemowo dataset would be a file called PB_Bemowo.txt within the results directory.
+
+Furhtermore, PB_analyser.jl also creates a PNG picture of the Pareto front within the plots directory. For instance, the plot file for the Bemowo dataset would be a file called PB_Bemowo.png within the plots directory.
