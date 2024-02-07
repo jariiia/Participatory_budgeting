@@ -32,6 +32,10 @@ After unzipping the AAMAS2024.zip file, you will obtain the following contents w
 - The "data" directory contains all the datasets employed in the paper for both Barcelona and Poland. Each data file contains the pre-computed values for citizen satisfaction and value alignment for each proposal.
 - The "results" directory contains the output produced when running PB_analyser.jl for each dataset in the data directory
 - The "plots" directory contains the Pareto front plots for each one of the datasets in the data directory
+- The "doc" directory contains supplementary material for the following article:
+
+Marc Serramià, Maite López-Sánchez, Juan A. Rodriguez-Aguilar and Stefano Moretti. Value alignment in participatory budgeting. In Proceedings of the 23rd International Conference on Autonomous Agents and Multi-Agent Systems
+AUCKLAND, NEW ZEALAND, 6 – 10 MAY 2024. In press. 
 
 
 How to run and plot an example
